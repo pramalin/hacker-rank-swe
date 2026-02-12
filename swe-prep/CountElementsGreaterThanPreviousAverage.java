@@ -19,10 +19,10 @@ class CountElementsGreaterThanPreviousAverage {
 
     public static int countResponseTimeRegressions(List<Integer> responseTimes) {
     // Write your code here
-        int sum = 0;
-        int prevAvg = 0;
+        int sum = 0; // cummulative sum
+        int prevAvg = 0; // last average
         int index = 0;
-        int count = 0;
+        int count = 0;  // counter
         Iterator<Integer> iterator = responseTimes.iterator();
 
         while(iterator.hasNext()) {
